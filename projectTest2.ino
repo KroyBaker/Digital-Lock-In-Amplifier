@@ -1,143 +1,130 @@
-//I decided to use the custom ARM arduino sine and cosine functions as they are optimizeed for the microcontroller.
-//The Arduino itself will not be the final PCB I will be using, however, it will be good as a prototype to build the code.
+/*
+ * A problem I noticed while thinking about the design was the "leakage" of the entire dot product between the reference wave and the input wave. 
+ * According to Functional analysis, the dot product between orthogonal waves is zero iff the integral is between an entire period.
+ * In order to account for this, I added both a Hanning window and alternated the frequency at which it would show output the count to being multiples of the period
+ * Arduino R4 - Digital Lock-In Amplifier (Windowed)
+ * Fix: Uses Hanning Window to solve spectral leakage for any frequency.
+ */
 
 
-#define ARM_MATH_CM4  // Tell the compiler we are on a Cortex-M4
-#define __FPU_PRESENT 1U // Tells the library to use the Hardware FPU
-#include <arm_math.h>
-#include <FspTimer.h> // Native R4 Timer Library
+ //Works for any frequency between 10Hz and 20kHz without changing logic.
 
-// --- Configuration ---
-#define SAMPLE_BLOCK_SIZE 1024 //Thinking of increasing a lot
-#define SAMPLING_RATE 40000.0f  // 40kHz sampling rate
-#define TARGET_FREQ 1000.0f     // The frequency we want to detect (1kHz)
+#define ARM_MATH_CM4
+#define __FPU_PRESENT 1U
+#include <arm_math.h> 
+#include <FspTimer.h> 
 
-// --- Buffers ---
-// CMSIS-DSP requires float32_t arrays
+#define SAMPLE_BLOCK_SIZE 1024     //Originally 256
+#define SAMPLING_RATE 50000.0f  //
+#define INPUT_PIN A0
+
+
+// Buffers
+
 float32_t inputBuffer[SAMPLE_BLOCK_SIZE]; 
 float32_t refSin[SAMPLE_BLOCK_SIZE];
 float32_t refCos[SAMPLE_BLOCK_SIZE];
-
-
-float32_t totalMagnitude;
-unsigned int totalMagnitudeSamples; //Will be all the total Magnitudes we sampled
-
-
-
-
-// Raw buffer for the Interrupt Service Routine (ISR) to fill
+float32_t window[SAMPLE_BLOCK_SIZE]; // NEW: Windowing Array
 volatile uint16_t rawAdcBuffer[SAMPLE_BLOCK_SIZE];
 
-// --- Global Variables for Synchronization ---
+// Logic Variables
+float currentFreq = 1000.0f;
+float32_t totalMagnitude = 0.0f;
+uint32_t blockCount = 0;
+
+// Timer Variables
 FspTimer samplingTimer;
 volatile bool dmaBufferFull = false;
 volatile int bufferIndex = 0;
 
-// --- Interrupt Service Routine (ISR) ---
-// This function runs automatically 40,000 times per second
-void timer_callback(timer_callback_args_t __attribute((unused)) *p_args) {
+void setTargetFrequency(float freq) {
+    currentFreq = freq; //Hmmm, maybe weird practice. We'll see
+    for(int i = 0; i < SAMPLE_BLOCK_SIZE; i++) {
+        float32_t phase = (2.0f * PI * currentFreq * i) / SAMPLING_RATE;
+        refSin[i] = arm_sin_f32(phase);
+        refCos[i] = arm_cos_f32(phase);
+    }
+    // Reset Averaging
+    totalMagnitude = 0; 
+    blockCount = 0; 
+}
+
+// ISR 
+void timer_callback(timer_callback_args_t* p) {
     if (bufferIndex < SAMPLE_BLOCK_SIZE) {
-        // Read ADC directly and store. 
-        // This is fast enough to happen in the background.
-        rawAdcBuffer[bufferIndex] = analogRead(A0);
+        rawAdcBuffer[bufferIndex] = analogRead(INPUT_PIN); //Where we read stuff
         bufferIndex++;
     } else {
-        // Buffer is full. Signal the main loop to process.
-        // We stop collecting (ignore timer ticks) until the loop resets us.
-        dmaBufferFull = true; 
+        dmaBufferFull = true;
     }
 }
 
-// --- Setup Timer Helper ---
 void setupTimer() {
     uint8_t timer_type = GPT_TIMER;
     int8_t t_index = FspTimer::get_available_timer(timer_type);
-    
-    if (t_index < 0) {
-        t_index = FspTimer::get_available_timer(timer_type, true); // Force a timer if none free
-    }
+    if (t_index < 0) t_index = FspTimer::get_available_timer(timer_type, true); 
 
     if (t_index != -1) {
-       samplingTimer.begin(
-            TIMER_MODE_PERIODIC,    // 1. Mode
-            timer_type,             // 2. Type (GPT)
-            t_index,                // 3. Channel
-            SAMPLING_RATE,          // 4. Frequency (Hz)
-            50.0f,                  // 5. Duty Cycle (50%)
-            timer_callback          // 6. Callback Function
-        );
-        
+        samplingTimer.begin(TIMER_MODE_PERIODIC, timer_type, t_index, SAMPLING_RATE, 50.0f, timer_callback);
         samplingTimer.setup_overflow_irq();
         samplingTimer.open();
         samplingTimer.start();
-
-    } else {
-        Serial.println("Failed to initialize Timer!");
     }
 }
 
 void setup() {
     Serial.begin(115200);
-    while (!Serial); // Wait for Serial Monitor
-
-    Serial.println("Initializing Digital Lock-in Amplifier...");
-
-    // 1. Initialize Reference Waves (Pre-compute once for speed)
-    // We generate the "Perfect" sine/cos waves to compare against
-    for(int i = 0; i < SAMPLE_BLOCK_SIZE; i++) {
-        // Calculate phase for this specific sample time
-        float32_t phase = (2.0f * PI * TARGET_FREQ * i) / SAMPLING_RATE;
-        
-        // Use CMSIS functions to fill the reference tables
-        refSin[i] = arm_sin_f32(phase);
-        refCos[i] = arm_cos_f32(phase);
+    analogReadResolution(14);
+    
+    // 1. Generate Hanning Window (Run once)
+    // Formula: 0.5 * (1 - cos(2*PI*i / (N-1)))
+    for (int i = 0; i < SAMPLE_BLOCK_SIZE; i++) {
+        window[i] = 0.5f * (1.0f - arm_cos_f32(2.0f * PI * i / (SAMPLE_BLOCK_SIZE - 1)));
     }
 
-    // 2. Configure ADC
-    analogReadResolution(14); // Set R4 to 14-bit mode (0-16383)
-
-    // 3. Start the Hardware Timer
+    setTargetFrequency(1000.0f);
     setupTimer();
-    
-    Serial.println("System Running. Outputting Magnitude...");
 }
 
 void loop() {
-    // Wait for the ISR to fill the buffer
     if (dmaBufferFull) {
-        
-        float32_t sumI, sumQ;
-        float32_t magnitude;
+        float32_t sumI, sumQ, mag;
 
-        // 4. Signal Conditioning
-        // Convert integer ADC (0-16383) to centered float (-1.0 to 1.0)
-        // Midpoint is 8191.5
+        // 1. Conditioning + Windowing
         for(int i=0; i<SAMPLE_BLOCK_SIZE; i++) {
-            inputBuffer[i] = ((float32_t)rawAdcBuffer[i] - 8191.5f) / 8192.0f;
+            // Normalize (-1.0 to 1.0)
+            float32_t val = ((float32_t)rawAdcBuffer[i] - 8191.5f) / 8192.0f;
+            
+            // APPLY WINDOW: This fixes the leakage/orthogonality error!
+            inputBuffer[i] = val * window[i]; 
         }
 
-        // 5. THE LOCK-IN MATH (CMSIS-DSP Optimization)
-        // Calculate Dot Products (Mixing + Averaging Sum)
-        // In-Phase Component (I)
+        // 2. The Orthogonality Check
         arm_dot_prod_f32(inputBuffer, refSin, SAMPLE_BLOCK_SIZE, &sumI);
-        // Quadrature Component (Q)
         arm_dot_prod_f32(inputBuffer, refCos, SAMPLE_BLOCK_SIZE, &sumQ);
-
-        // 6. Normalize and Calculate Magnitude
-        // We divide by (N/2) because dot product sums N samples
-        float32_t I = sumI / (SAMPLE_BLOCK_SIZE / 2.0f);
-        float32_t Q = sumQ / (SAMPLE_BLOCK_SIZE / 2.0f);
         
-        // Calculate Magnitude = sqrt(I^2 + Q^2)
-        arm_sqrt_f32((I*I) + (Q*Q), &magnitude);
+        // Normalization (Windowing reduces power by half, so we adjust)
+        float32_t I = sumI / (SAMPLE_BLOCK_SIZE / 4.0f); // Factor 4.0 for Hanning
+        float32_t Q = sumQ / (SAMPLE_BLOCK_SIZE / 4.0f);
+        arm_sqrt_f32((I*I) + (Q*Q), &mag);
 
-        // 7. Output Result
-        // Use Serial Plotter (Ctrl+Shift+L) to view this as a graph
-        Serial.println(magnitude, 6);
+        // 3. Simple Averaging for Noise Reduction
+        totalMagnitude += mag;
+        blockCount++;
+        
+        // Print every ~0.5 seconds (approx 80 blocks)
+        if (blockCount >= 80) {
+            //Serial.print("Freq: ");
+            //Serial.print(currentFreq);
+            //Serial.print(" Hz | Mag: ");
+            //Serial.println(totalMagnitude / blockCount, 6);
+            //Not yet printing as it will mess up timing
+            
+            totalMagnitude = 0; 
+            blockCount = 0; 
+        }
 
-        // 8. Restart Data Collection
-        // We must reset the index so the ISR starts filling from 0 again
         bufferIndex = 0; 
-        dmaBufferFull = false; 
+        dmaBufferFull = false;
     }
 }
