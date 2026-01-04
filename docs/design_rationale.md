@@ -43,4 +43,7 @@ One issue I have with the design is the 10kΩ resistor which will be connected t
 Although I intend to explain my design decision as thoroughly as possible through this document, I feel that information would overflow the page, so I will choose to include all part decision on the separate document which only talks about exact component rationale.
 
 
+January 4th, 2026
 
+After careful consideration, I decided to no longer include a MCU in my main design for the project. I found that incorporating it will be a huge bottle neck to the project as it must go through both the FPGA and the MCU in the first place. The solution was to instead use an FPGA which can do both.
+My current choice is the Xilinix K26 SOM
