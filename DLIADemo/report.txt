@@ -1,0 +1,333 @@
+Info: Processing symbol 'C1:SamacSys_Parts:CAPC1005X70N'.
+Info: Processing symbol 'C2:SamacSys_Parts:CAPC1005X70N'.
+Info: Processing symbol 'C3:SamacSys_Parts:GRM033D70J224ME01D'.
+Info: Processing symbol 'TP50:kria-k26-devboard-footprints:TP_SMD_0.75mm'.
+Info: Processing symbol 'U1:Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm'.
+Info: Processing symbol 'C4:SamacSys_Parts:T510X'.
+Info: Processing symbol 'C5:SamacSys_Parts:CAPC1005X56N'.
+Info: Processing symbol 'C6:SamacSys_Parts:T510X'.
+Info: Processing symbol 'C7:SamacSys_Parts:CAPC1005X56N'.
+Info: Processing symbol 'C8:SamacSys_Parts:RCER71H475K3DBH03A'.
+Info: Processing symbol 'C9:SamacSys_Parts:RCER71H475K3DBH03A'.
+Info: Processing symbol 'C10:SamacSys_Parts:RCER71H475K3DBH03A'.
+Info: Processing symbol 'C11:SamacSys_Parts:CAPC0603X33N'.
+Info: Processing symbol 'C12:SamacSys_Parts:T510X'.
+Info: Processing symbol 'C13:SamacSys_Parts:CAPC1005X70N'.
+Info: Processing symbol 'C14:SamacSys_Parts:CAPC1005X56N'.
+Info: Processing symbol 'C15:SamacSys_Parts:CAPC1005X56N'.
+Info: Processing symbol 'C16:SamacSys_Parts:CAPC1005X56N'.
+Info: Processing symbol 'C17:SamacSys_Parts:RCER71H475K3DBH03A'.
+Info: Processing symbol 'C18:SamacSys_Parts:RCER71H475K3DBH03A'.
+Info: Processing symbol 'C20:SamacSys_Parts:RCER71H475K3DBH03A'.
+Info: Processing symbol 'C21:SamacSys_Parts:CAPC1005X56N'.
+Info: Processing symbol 'C22:SamacSys_Parts:CAPC1005X56N'.
+Info: Processing symbol 'C184:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C186:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C188:kria-k26-devboard-footprints:C_0402_1005Metric'.
+Info: Processing symbol 'C190:kria-k26-devboard-footprints:C_0402_1005Metric'.
+Info: Processing symbol 'C192:kria-k26-devboard-footprints:C_0402_1005Metric'.
+Info: Processing symbol 'C194:kria-k26-devboard-footprints:C_0402_1005Metric'.
+Info: Processing symbol 'C196:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C198:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C200:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C219:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C220:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C221:kria-k26-devboard-footprints:C_0402_1005Metric'.
+Info: Processing symbol 'C222:kria-k26-devboard-footprints:C_0402_1005Metric'.
+Info: Processing symbol 'C223:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C224:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C225:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'C226:kria-k26-devboard-footprints:C_0603_1608Metric'.
+Info: Processing symbol 'D2:SamacSys_Parts:S5973'.
+Info: Processing symbol 'IC1:SamacSys_Parts:LTC6419IVPBF'.
+Info: Processing symbol 'IC2:SamacSys_Parts:QFN50P1000X1000X90-73N-D'.
+Info: Processing symbol 'IC3:SamacSys_Parts:QFN50P700X700X100-49N-D'.
+Info: Processing symbol 'IC4:SamacSys_Parts:SOP50P490X110-10N'.
+Info: Processing symbol 'IC5:SamacSys_Parts:SOT65P280X145-8N'.
+Info: Processing symbol 'J_SOM240_1:kria-k26-devboard-footprints:Conn_Plug_Samtec_ADM6_4x60_ADM6-60-01.5-L-4-2-A-TR'.
+Info: Processing symbol 'U2:Package_DFN_QFN:DFN-12-1EP_3x3mm_P0.45mm_EP1.65x2.38mm_ThermalVias'.
+Info: Processing symbol 'U3:Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm'.
+Info: Processing symbol 'U5:Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm'.
+Info: Processing symbol 'U48:kria-k26-devboard-footprints:UQFN-13_2x3mm_P0.5mm'.
+Info: Processing symbol 'U54:kria-k26-devboard-footprints:TSOT23-6'.
+Info: Processing symbol 'U55:kria-k26-devboard-footprints:TSOT23-6'.
+Info: Processing symbol 'Y1:SamacSys_Parts:OH10050503CV0100M'.
+Info: Total warnings: 240, errors: 0.
+Info: Processing symbol 'J_SOM240_2:kria-k26-devboard-footprints:Conn_Plug_Samtec_ADM6_4x60_ADM6-60-01.5-L-4-2-A-TR'.
+Info: Processing symbol 'K1:CRR031AS'.
+Info: Processing symbol 'L2:kria-k26-devboard-footprints:L_Coilcraft-XEL4030'.
+Info: Processing symbol 'L8:kria-k26-devboard-footprints:L_0806_2016Metric'.
+Info: Processing symbol 'L9:kria-k26-devboard-footprints:L_0806_2016Metric'.
+Info: Processing symbol 'R1:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R2:SamacSys_Parts:RESC1005X40N'.
+Info: Processing symbol 'R3:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R4:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R5:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R6:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R7:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R8:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R9:SamacSys_Parts:RESC1608X55N'.
+Info: Processing symbol 'R10:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R119:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R124:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R125:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R144:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R145:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R146:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R147:kria-k26-devboard-footprints:R_0402_1005Metric'.
+Info: Processing symbol 'R158:kria-k26-devboard-footprints:R_0603_1608Metric'.
+Info: Processing symbol 'R159:kria-k26-devboard-footprints:R_0603_1608Metric'.
+Info: Processing symbol 'R161:kria-k26-devboard-footprints:R_0603_1608Metric'.
+Info: Processing symbol 'TP41:kria-k26-devboard-footprints:TP_SMD_0.75mm'.
+Info: Processing symbol 'TP42:kria-k26-devboard-footprints:TP_SMD_0.75mm'.
+Add net Net-(K1-NO).
+Reconnect C3 pin 1 from Net-(D2-CASE) to Net-(K1-NO).
+Change K1 footprint from 'SamacSys_Parts:CRR031AS' to 'CRR031AS'.
+Reconnect K1 pin 5 from unconnected-(K1-NO-Pad5) to Net-(K1-NO).
+Reconnect K1 pin 10 from unconnected-(K1-COM-Pad10) to Net-(D2-CASE).
+Reconnect R2 pin 1 from Net-(D2-CASE) to Net-(K1-NO).
+
+
+Warning: No net found for component J_SOM240_1 pad D59 (no pin D59 in symbol).
+Warning: No net found for component J_SOM240_1 pad C38 (no pin C38 in symbol).
+Warning: No net found for component J_SOM240_1 pad C30 (no pin C30 in symbol).
+Warning: No net found for component J_SOM240_1 pad D03 (no pin D03 in symbol).
+Warning: No net found for component J_SOM240_1 pad C13 (no pin C13 in symbol).
+Warning: No net found for component J_SOM240_1 pad D42 (no pin D42 in symbol).
+Warning: No net found for component J_SOM240_1 pad D56 (no pin D56 in symbol).
+Warning: No net found for component J_SOM240_1 pad D15 (no pin D15 in symbol).
+Warning: No net found for component J_SOM240_1 pad C58 (no pin C58 in symbol).
+Warning: No net found for component J_SOM240_1 pad C24 (no pin C24 in symbol).
+Warning: No net found for component J_SOM240_1 pad C46 (no pin C46 in symbol).
+Warning: No net found for component J_SOM240_1 pad C37 (no pin C37 in symbol).
+Warning: No net found for component J_SOM240_1 pad C31 (no pin C31 in symbol).
+Warning: No net found for component J_SOM240_1 pad C39 (no pin C39 in symbol).
+Warning: No net found for component J_SOM240_1 pad D22 (no pin D22 in symbol).
+Warning: No net found for component J_SOM240_1 pad D47 (no pin D47 in symbol).
+Warning: No net found for component J_SOM240_1 pad C08 (no pin C08 in symbol).
+Warning: No net found for component J_SOM240_1 pad C01 (no pin C01 in symbol).
+Warning: No net found for component J_SOM240_1 pad C56 (no pin C56 in symbol).
+Warning: No net found for component J_SOM240_1 pad D31 (no pin D31 in symbol).
+Warning: No net found for component J_SOM240_1 pad C20 (no pin C20 in symbol).
+Warning: No net found for component J_SOM240_1 pad C52 (no pin C52 in symbol).
+Warning: No net found for component J_SOM240_1 pad D10 (no pin D10 in symbol).
+Warning: No net found for component J_SOM240_1 pad C42 (no pin C42 in symbol).
+Warning: No net found for component J_SOM240_1 pad D33 (no pin D33 in symbol).
+Warning: No net found for component J_SOM240_1 pad D57 (no pin D57 in symbol).
+Warning: No net found for component J_SOM240_1 pad D17 (no pin D17 in symbol).
+Warning: No net found for component J_SOM240_1 pad D24 (no pin D24 in symbol).
+Warning: No net found for component J_SOM240_1 pad D28 (no pin D28 in symbol).
+Warning: No net found for component J_SOM240_1 pad C29 (no pin C29 in symbol).
+Warning: No net found for component J_SOM240_1 pad C26 (no pin C26 in symbol).
+Warning: No net found for component J_SOM240_1 pad C27 (no pin C27 in symbol).
+Warning: No net found for component J_SOM240_1 pad D19 (no pin D19 in symbol).
+Warning: No net found for component J_SOM240_1 pad C06 (no pin C06 in symbol).
+Warning: No net found for component J_SOM240_1 pad C28 (no pin C28 in symbol).
+Warning: No net found for component J_SOM240_1 pad C10 (no pin C10 in symbol).
+Warning: No net found for component J_SOM240_1 pad C09 (no pin C09 in symbol).
+Warning: No net found for component J_SOM240_1 pad C05 (no pin C05 in symbol).
+Warning: No net found for component J_SOM240_1 pad D07 (no pin D07 in symbol).
+Warning: No net found for component J_SOM240_1 pad C18 (no pin C18 in symbol).
+Warning: No net found for component J_SOM240_1 pad D38 (no pin D38 in symbol).
+Warning: No net found for component J_SOM240_1 pad D05 (no pin D05 in symbol).
+Warning: No net found for component J_SOM240_1 pad D13 (no pin D13 in symbol).
+Warning: No net found for component J_SOM240_1 pad C57 (no pin C57 in symbol).
+Warning: No net found for component J_SOM240_1 pad C40 (no pin C40 in symbol).
+Warning: No net found for component J_SOM240_1 pad D45 (no pin D45 in symbol).
+Warning: No net found for component J_SOM240_1 pad C21 (no pin C21 in symbol).
+Warning: No net found for component J_SOM240_1 pad C32 (no pin C32 in symbol).
+Warning: No net found for component J_SOM240_1 pad D06 (no pin D06 in symbol).
+Warning: No net found for component J_SOM240_1 pad D02 (no pin D02 in symbol).
+Warning: No net found for component J_SOM240_1 pad D46 (no pin D46 in symbol).
+Warning: No net found for component J_SOM240_1 pad D49 (no pin D49 in symbol).
+Warning: No net found for component J_SOM240_1 pad C53 (no pin C53 in symbol).
+Warning: No net found for component J_SOM240_1 pad D52 (no pin D52 in symbol).
+Warning: No net found for component J_SOM240_1 pad C02 (no pin C02 in symbol).
+Warning: No net found for component J_SOM240_1 pad D27 (no pin D27 in symbol).
+Warning: No net found for component J_SOM240_1 pad D60 (no pin D60 in symbol).
+Warning: No net found for component J_SOM240_1 pad D50 (no pin D50 in symbol).
+Warning: No net found for component J_SOM240_1 pad D18 (no pin D18 in symbol).
+Warning: No net found for component J_SOM240_1 pad C17 (no pin C17 in symbol).
+Warning: No net found for component J_SOM240_1 pad D11 (no pin D11 in symbol).
+Warning: No net found for component J_SOM240_1 pad D14 (no pin D14 in symbol).
+Warning: No net found for component J_SOM240_1 pad C19 (no pin C19 in symbol).
+Warning: No net found for component J_SOM240_1 pad D43 (no pin D43 in symbol).
+Warning: No net found for component J_SOM240_1 pad C12 (no pin C12 in symbol).
+Warning: No net found for component J_SOM240_1 pad D48 (no pin D48 in symbol).
+Warning: No net found for component J_SOM240_1 pad C49 (no pin C49 in symbol).
+Warning: No net found for component J_SOM240_1 pad C22 (no pin C22 in symbol).
+Warning: No net found for component J_SOM240_1 pad C34 (no pin C34 in symbol).
+Warning: No net found for component J_SOM240_1 pad C14 (no pin C14 in symbol).
+Warning: No net found for component J_SOM240_1 pad C59 (no pin C59 in symbol).
+Warning: No net found for component J_SOM240_1 pad D08 (no pin D08 in symbol).
+Warning: No net found for component J_SOM240_1 pad D20 (no pin D20 in symbol).
+Warning: No net found for component J_SOM240_1 pad D30 (no pin D30 in symbol).
+Warning: No net found for component J_SOM240_1 pad D25 (no pin D25 in symbol).
+Warning: No net found for component J_SOM240_1 pad D23 (no pin D23 in symbol).
+Warning: No net found for component J_SOM240_1 pad D51 (no pin D51 in symbol).
+Warning: No net found for component J_SOM240_1 pad D04 (no pin D04 in symbol).
+Warning: No net found for component J_SOM240_1 pad D16 (no pin D16 in symbol).
+Warning: No net found for component J_SOM240_1 pad D44 (no pin D44 in symbol).
+Warning: No net found for component J_SOM240_1 pad C16 (no pin C16 in symbol).
+Warning: No net found for component J_SOM240_1 pad D54 (no pin D54 in symbol).
+Warning: No net found for component J_SOM240_1 pad D32 (no pin D32 in symbol).
+Warning: No net found for component J_SOM240_1 pad D21 (no pin D21 in symbol).
+Warning: No net found for component J_SOM240_1 pad C43 (no pin C43 in symbol).
+Warning: No net found for component J_SOM240_1 pad D34 (no pin D34 in symbol).
+Warning: No net found for component J_SOM240_1 pad C33 (no pin C33 in symbol).
+Warning: No net found for component J_SOM240_1 pad D58 (no pin D58 in symbol).
+Warning: No net found for component J_SOM240_1 pad C36 (no pin C36 in symbol).
+Warning: No net found for component J_SOM240_1 pad C04 (no pin C04 in symbol).
+Warning: No net found for component J_SOM240_1 pad C23 (no pin C23 in symbol).
+Warning: No net found for component J_SOM240_1 pad C51 (no pin C51 in symbol).
+Warning: No net found for component J_SOM240_1 pad C55 (no pin C55 in symbol).
+Warning: No net found for component J_SOM240_1 pad D36 (no pin D36 in symbol).
+Warning: No net found for component J_SOM240_1 pad C35 (no pin C35 in symbol).
+Warning: No net found for component J_SOM240_1 pad D35 (no pin D35 in symbol).
+Warning: No net found for component J_SOM240_1 pad C41 (no pin C41 in symbol).
+Warning: No net found for component J_SOM240_1 pad C50 (no pin C50 in symbol).
+Warning: No net found for component J_SOM240_1 pad C44 (no pin C44 in symbol).
+Warning: No net found for component J_SOM240_1 pad C07 (no pin C07 in symbol).
+Warning: No net found for component J_SOM240_1 pad C54 (no pin C54 in symbol).
+Warning: No net found for component J_SOM240_1 pad C15 (no pin C15 in symbol).
+Warning: No net found for component J_SOM240_1 pad C48 (no pin C48 in symbol).
+Warning: No net found for component J_SOM240_1 pad D29 (no pin D29 in symbol).
+Warning: No net found for component J_SOM240_1 pad C60 (no pin C60 in symbol).
+Warning: No net found for component J_SOM240_1 pad C03 (no pin C03 in symbol).
+Warning: No net found for component J_SOM240_1 pad C11 (no pin C11 in symbol).
+Warning: No net found for component J_SOM240_1 pad D09 (no pin D09 in symbol).
+Warning: No net found for component J_SOM240_1 pad D01 (no pin D01 in symbol).
+Warning: No net found for component J_SOM240_1 pad D55 (no pin D55 in symbol).
+Warning: No net found for component J_SOM240_1 pad D53 (no pin D53 in symbol).
+Warning: No net found for component J_SOM240_1 pad D37 (no pin D37 in symbol).
+Warning: No net found for component J_SOM240_2 pad C28 (no pin C28 in symbol).
+Warning: No net found for component J_SOM240_2 pad C07 (no pin C07 in symbol).
+Warning: No net found for component J_SOM240_2 pad D59 (no pin D59 in symbol).
+Warning: No net found for component J_SOM240_2 pad C06 (no pin C06 in symbol).
+Warning: No net found for component J_SOM240_2 pad C23 (no pin C23 in symbol).
+Warning: No net found for component J_SOM240_2 pad D28 (no pin D28 in symbol).
+Warning: No net found for component J_SOM240_2 pad D42 (no pin D42 in symbol).
+Warning: No net found for component J_SOM240_2 pad D43 (no pin D43 in symbol).
+Warning: No net found for component J_SOM240_2 pad C01 (no pin C01 in symbol).
+Warning: No net found for component J_SOM240_2 pad D13 (no pin D13 in symbol).
+Warning: No net found for component J_SOM240_2 pad D07 (no pin D07 in symbol).
+Warning: No net found for component J_SOM240_2 pad D58 (no pin D58 in symbol).
+Warning: No net found for component J_SOM240_2 pad C20 (no pin C20 in symbol).
+Warning: No net found for component J_SOM240_2 pad D10 (no pin D10 in symbol).
+Warning: No net found for component J_SOM240_2 pad C59 (no pin C59 in symbol).
+Warning: No net found for component J_SOM240_2 pad D24 (no pin D24 in symbol).
+Warning: No net found for component J_SOM240_2 pad C52 (no pin C52 in symbol).
+Warning: No net found for component J_SOM240_2 pad D44 (no pin D44 in symbol).
+Warning: No net found for component J_SOM240_2 pad D11 (no pin D11 in symbol).
+Warning: No net found for component J_SOM240_2 pad D05 (no pin D05 in symbol).
+Warning: No net found for component J_SOM240_2 pad D08 (no pin D08 in symbol).
+Warning: No net found for component J_SOM240_2 pad D36 (no pin D36 in symbol).
+Warning: No net found for component J_SOM240_2 pad C09 (no pin C09 in symbol).
+Warning: No net found for component J_SOM240_2 pad C25 (no pin C25 in symbol).
+Warning: No net found for component J_SOM240_2 pad C21 (no pin C21 in symbol).
+Warning: No net found for component J_SOM240_2 pad D21 (no pin D21 in symbol).
+Warning: No net found for component J_SOM240_2 pad C04 (no pin C04 in symbol).
+Warning: No net found for component J_SOM240_2 pad C43 (no pin C43 in symbol).
+Warning: No net found for component J_SOM240_2 pad C54 (no pin C54 in symbol).
+Warning: No net found for component J_SOM240_2 pad C57 (no pin C57 in symbol).
+Warning: No net found for component J_SOM240_2 pad D03 (no pin D03 in symbol).
+Warning: No net found for component J_SOM240_2 pad D09 (no pin D09 in symbol).
+Warning: No net found for component J_SOM240_2 pad C16 (no pin C16 in symbol).
+Warning: No net found for component J_SOM240_2 pad D32 (no pin D32 in symbol).
+Warning: No net found for component J_SOM240_2 pad D57 (no pin D57 in symbol).
+Warning: No net found for component J_SOM240_2 pad C24 (no pin C24 in symbol).
+Warning: No net found for component J_SOM240_2 pad C13 (no pin C13 in symbol).
+Warning: No net found for component J_SOM240_2 pad C27 (no pin C27 in symbol).
+Warning: No net found for component J_SOM240_2 pad C50 (no pin C50 in symbol).
+Warning: No net found for component J_SOM240_2 pad C19 (no pin C19 in symbol).
+Warning: No net found for component J_SOM240_2 pad C33 (no pin C33 in symbol).
+Warning: No net found for component J_SOM240_2 pad C53 (no pin C53 in symbol).
+Warning: No net found for component J_SOM240_2 pad D25 (no pin D25 in symbol).
+Warning: No net found for component J_SOM240_2 pad D06 (no pin D06 in symbol).
+Warning: No net found for component J_SOM240_2 pad D15 (no pin D15 in symbol).
+Warning: No net found for component J_SOM240_1 pad C47 (no pin C47 in symbol).
+Warning: No net found for component J_SOM240_2 pad D29 (no pin D29 in symbol).
+Warning: No net found for component J_SOM240_2 pad D53 (no pin D53 in symbol).
+Warning: No net found for component J_SOM240_2 pad C60 (no pin C60 in symbol).
+Warning: No net found for component J_SOM240_2 pad C22 (no pin C22 in symbol).
+Warning: No net found for component J_SOM240_2 pad C17 (no pin C17 in symbol).
+Warning: No net found for component J_SOM240_2 pad C51 (no pin C51 in symbol).
+Warning: No net found for component J_SOM240_2 pad D26 (no pin D26 in symbol).
+Warning: No net found for component J_SOM240_2 pad D60 (no pin D60 in symbol).
+Warning: No net found for component J_SOM240_2 pad D48 (no pin D48 in symbol).
+Warning: No net found for component J_SOM240_2 pad C29 (no pin C29 in symbol).
+Warning: No net found for component J_SOM240_2 pad C12 (no pin C12 in symbol).
+Warning: No net found for component J_SOM240_2 pad D46 (no pin D46 in symbol).
+Warning: No net found for component J_SOM240_2 pad C38 (no pin C38 in symbol).
+Warning: No net found for component J_SOM240_2 pad D37 (no pin D37 in symbol).
+Warning: No net found for component J_SOM240_2 pad D31 (no pin D31 in symbol).
+Warning: No net found for component J_SOM240_2 pad D22 (no pin D22 in symbol).
+Warning: No net found for component J_SOM240_2 pad C36 (no pin C36 in symbol).
+Warning: No net found for component J_SOM240_2 pad D49 (no pin D49 in symbol).
+Warning: No net found for component J_SOM240_2 pad C39 (no pin C39 in symbol).
+Warning: No net found for component J_SOM240_2 pad D41 (no pin D41 in symbol).
+Warning: No net found for component J_SOM240_2 pad D45 (no pin D45 in symbol).
+Warning: No net found for component J_SOM240_2 pad C14 (no pin C14 in symbol).
+Warning: No net found for component J_SOM240_2 pad D39 (no pin D39 in symbol).
+Warning: No net found for component J_SOM240_2 pad D55 (no pin D55 in symbol).
+Warning: No net found for component J_SOM240_2 pad C42 (no pin C42 in symbol).
+Warning: No net found for component J_SOM240_2 pad C32 (no pin C32 in symbol).
+Warning: No net found for component J_SOM240_2 pad D38 (no pin D38 in symbol).
+Warning: No net found for component J_SOM240_2 pad D52 (no pin D52 in symbol).
+Warning: No net found for component J_SOM240_2 pad D02 (no pin D02 in symbol).
+Warning: No net found for component J_SOM240_2 pad D01 (no pin D01 in symbol).
+Warning: No net found for component J_SOM240_2 pad C47 (no pin C47 in symbol).
+Warning: No net found for component J_SOM240_2 pad D18 (no pin D18 in symbol).
+Warning: No net found for component J_SOM240_2 pad C37 (no pin C37 in symbol).
+Warning: No net found for component J_SOM240_2 pad D47 (no pin D47 in symbol).
+Warning: No net found for component J_SOM240_2 pad C05 (no pin C05 in symbol).
+Warning: No net found for component J_SOM240_2 pad D20 (no pin D20 in symbol).
+Warning: No net found for component J_SOM240_2 pad C35 (no pin C35 in symbol).
+Warning: No net found for component J_SOM240_2 pad C55 (no pin C55 in symbol).
+Warning: No net found for component J_SOM240_2 pad C11 (no pin C11 in symbol).
+Warning: No net found for component J_SOM240_2 pad D35 (no pin D35 in symbol).
+Warning: No net found for component J_SOM240_1 pad D41 (no pin D41 in symbol).
+Warning: No net found for component J_SOM240_1 pad C45 (no pin C45 in symbol).
+Warning: No net found for component J_SOM240_1 pad C25 (no pin C25 in symbol).
+Warning: No net found for component J_SOM240_1 pad D26 (no pin D26 in symbol).
+Warning: No net found for component J_SOM240_2 pad C58 (no pin C58 in symbol).
+Warning: No net found for component J_SOM240_2 pad D14 (no pin D14 in symbol).
+Warning: No net found for component J_SOM240_2 pad D33 (no pin D33 in symbol).
+Warning: No net found for component J_SOM240_2 pad D30 (no pin D30 in symbol).
+Warning: No net found for component J_SOM240_2 pad D34 (no pin D34 in symbol).
+Warning: No net found for component J_SOM240_1 pad D40 (no pin D40 in symbol).
+Warning: No net found for component J_SOM240_2 pad C03 (no pin C03 in symbol).
+Warning: No net found for component J_SOM240_2 pad D23 (no pin D23 in symbol).
+Warning: No net found for component J_SOM240_2 pad D56 (no pin D56 in symbol).
+Warning: No net found for component J_SOM240_2 pad C49 (no pin C49 in symbol).
+Warning: No net found for component J_SOM240_2 pad D19 (no pin D19 in symbol).
+Warning: No net found for component J_SOM240_2 pad C48 (no pin C48 in symbol).
+Warning: No net found for component J_SOM240_2 pad D50 (no pin D50 in symbol).
+Warning: No net found for component J_SOM240_2 pad C46 (no pin C46 in symbol).
+Warning: No net found for component J_SOM240_2 pad C41 (no pin C41 in symbol).
+Warning: No net found for component J_SOM240_2 pad D27 (no pin D27 in symbol).
+Warning: No net found for component J_SOM240_2 pad C15 (no pin C15 in symbol).
+Warning: No net found for component J_SOM240_2 pad D40 (no pin D40 in symbol).
+Warning: No net found for component J_SOM240_2 pad D16 (no pin D16 in symbol).
+Warning: No net found for component J_SOM240_2 pad D51 (no pin D51 in symbol).
+Warning: No net found for component J_SOM240_2 pad C45 (no pin C45 in symbol).
+Warning: No net found for component J_SOM240_2 pad C56 (no pin C56 in symbol).
+Warning: No net found for component J_SOM240_2 pad C02 (no pin C02 in symbol).
+Warning: No net found for component J_SOM240_2 pad C08 (no pin C08 in symbol).
+Warning: No net found for component J_SOM240_2 pad C40 (no pin C40 in symbol).
+Warning: No net found for component J_SOM240_2 pad C18 (no pin C18 in symbol).
+Warning: No net found for component J_SOM240_2 pad D12 (no pin D12 in symbol).
+Warning: No net found for component J_SOM240_2 pad C31 (no pin C31 in symbol).
+Warning: No net found for component J_SOM240_2 pad C44 (no pin C44 in symbol).
+Warning: No net found for component J_SOM240_2 pad D17 (no pin D17 in symbol).
+Warning: No net found for component J_SOM240_2 pad C26 (no pin C26 in symbol).
+Warning: No net found for component J_SOM240_2 pad C30 (no pin C30 in symbol).
+Warning: No net found for component J_SOM240_2 pad C10 (no pin C10 in symbol).
+Warning: No net found for component J_SOM240_2 pad D54 (no pin D54 in symbol).
+Warning: No net found for component J_SOM240_2 pad D04 (no pin D04 in symbol).
+Warning: No net found for component J_SOM240_1 pad D39 (no pin D39 in symbol).
+Warning: No net found for component J_SOM240_1 pad D12 (no pin D12 in symbol).
+Warning: No net found for component J_SOM240_2 pad C34 (no pin C34 in symbol).
+
+
+Info: Total warnings: 240, errors: 0.
